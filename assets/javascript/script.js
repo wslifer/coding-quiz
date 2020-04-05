@@ -37,18 +37,5 @@ for (var i = 0; i < quizBtn.length; i++) {
       showQ();
     }
   });
-}
+};
 
-submitBtn.addEventListener('click', function(event){
-  event.stopPropagation();
-
-  var initials = userName.value;
-
-  var finalScore = {
-    initials,
-    score
-  };
-  highscores.push(finalScore)
-  localStorage.setItem('highscores', JSON.stringify(highscores));
-  
-})

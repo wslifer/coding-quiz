@@ -1,11 +1,11 @@
-var highscores = JSON.parse(localStorage.getItem('highscores'));
+var highscores = JSON.parse(localStorage.getItem('highscores')) || [];
 var leaderboard = document.querySelector('#leaderboardDisplay');
 
 window.addEventListener('load', function(){printHighscore()});
 
 function printHighscore(){
-    highscores = scoreSorter
-    for(var i = 0; i <highscores.length; i++){
+    highscores = scoreSorter(highscores, 'score');
+    for(var i = 0; i < highscores.length; i++){
         var points = document.createElement('li');
         var player = document.createTextNode(highscores[i].initials + ': ' + highscores[i].score);
         points.appendChild(player);
@@ -19,8 +19,8 @@ function scoreSorter(array, key){
     return array.sort(function(a,b){
         if(a.score < b.score){
             return 1;
-        }else{
-            return -1;
         }
+            return -1;
+        
     });
 }
