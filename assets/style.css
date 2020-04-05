@@ -10,6 +10,13 @@
     padding: 20px;
     width: 75%;
 }
+.leaderboard {
+    background: #030129;
+    margin: auto;
+    margin-top: 1%;
+    padding: 20px;
+    width: 75%;
+}
 .quizBoxes {
     display: none;
 }
