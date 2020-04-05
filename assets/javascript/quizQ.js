@@ -10,18 +10,18 @@ var quizQ = [
     answer: ">=",
   },
   {
-    title: "",
-    choices: [],
-    answer: "",
+    title: "Bootstrap is an online database for:",
+    choices: ['javaScript', 'css', 'html', 'cookies'],
+    answer: "css",
   },
   {
-    title: "",
-    choices: [],
-    answer: "",
+    title: "The acronym API stands for:",
+    choices: ['application programming interface', 'application production interface', 'applied python interface', 'applied programming interface'],
+    answer: "application programming interface",
   },
   {
-    title: "",
-    choices: [],
-    answer: "",
+    title: "The text 'frontEnd' is in what case:",
+    choices: ['kabob case', 'camel case', 'snake case', 'cat case'],
+    answer: "camel case",
   },
 ];
