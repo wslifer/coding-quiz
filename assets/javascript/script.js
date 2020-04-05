@@ -6,9 +6,9 @@ var currentIndex = 0;
 
 startQuiz.addEventListener("click", function (event) {
   event.stopPropagation();
-  /* startTimer(); */
-  document.querySelector("#boxOne").style.display = "none";
-  document.querySelector("#boxTwo").style.display = "block";
+  startTimer();
+  document.querySelector("#boxOne").setAttribute('style', 'display: none');
+  document.querySelector("#boxTwo").setAttribute('style', 'display: block' );
   showQ();
 });
 
@@ -30,7 +30,7 @@ for (var i = 0; i < quizBtn.length; i++) {
       document.querySelector("#checkAns").innerHTML = "Correct!";
     } else {
       document.querySelector("#checkAns").innerHTML = "Incorrect!";
-      /* secondsleft = secondsleft - 20; */
+      secondsRemaining = secondsRemaining - 15; 
     }
     currentIndex++;
     if (currentIndex < 5) {
@@ -38,3 +38,5 @@ for (var i = 0; i < quizBtn.length; i++) {
     }
   });
 }
+
+submitBtn.addEventListener('click',)
