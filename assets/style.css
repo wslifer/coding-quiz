@@ -1,0 +1,15 @@
+.countdownBox {
+    color: black;
+    background-color: white;
+    padding: 20px;
+}
+.quizRules {
+    background: #10e775;
+    margin: auto;
+    margin-top: 10%;
+    padding: 20px;
+    width: 75%;
+}
+.quizBoxes {
+    display: none;
+}
