@@ -32,7 +32,7 @@ for(var i = 0; i <quizBtn.length; i++){
             secondsleft = secondsleft - 20;
         }
         currentIndex++;
-        if(currentIndex < 5){
+        if(currentIndex < 10){
             showQ();
         }
     })
