@@ -10,15 +10,17 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/style.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <div class="container">
         <ul class="navbar-nav">
           <li class="nav-itm active">
-            <a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
-        </li>
+            <a class="nav-item nav-link active" href="index.html"
+              >Home<span class="sr-only">(current)</span></a
+            >
+          </li>
           <li class="nav-item active">
             <a class="nav-item nav-link active" href="leaderboard.html"
               >Leaderboard <span class="sr-only">(current)</span></a
@@ -32,45 +34,47 @@
     </nav>
 
     <div class="quizWrap">
-        
-        <div id="quizBox" class="quizRules">
-            
-            <div id="boxOne" class="text-center">
-                <h3>Coding Quiz</h3>
-                <p>Once you press start the quiz will begin!</p>
-                <p>You will have 90 seconds on the clock to answer 5 questions.</p>
-                <p>However, guess wrong and 15 seconds will be deducted from the clock!</p>
-                <p>Good luck!!!</p>
-                <button id="startQuiz">Start Quiz!</button>
-            </div>
-            
-            <div id="boxTwo" class="quizBoxes"> 
-                <h3 id="title"></h3>
-                <button id ="ansA" class="quizBtn"></button>
-                <button id ="ansB" class="quizBtn"></button>
-                <button id ="ansC" class="quizBtn"></button>
-                <button id="ansD" class="quizBtn"></button>
-                <p id="checkAns"></p>
-            </div>
-            
-            <div id="boxThree" class="quizBoxes">
-                <h3>Times up! Sorry, you lose!</h3>
-                <a href="index.html" class="button px-2 py-1">Go Back</a>
-            </div>
- 
-            <div id="boxFour" class="quizBoxes">
-                <h3 id="gameOver"></h3>
-                <h4 id="userScore"></h4>
-                <p>Enter your initials for the leaderboard:</p>
-                <form>
-                    <input type="text" id="userName">
-                    <a href="leaderboard.html" id="submitScore" class="button px-2 py-1">Submit</a>
-                </form>
-            </div>
-
+      <div id="quizBox" class="quizRules">
+        <div id="boxOne" class="text-center">
+          <h3>Coding Quiz</h3>
+          <p>Once you press start the quiz will begin!</p>
+          <p>You will have 90 seconds on the clock to answer 5 questions.</p>
+          <p>
+            However, guess wrong and 15 seconds will be deducted from the clock!
+          </p>
+          <p>Good luck!!!</p>
+          <button id="startQuiz">Start Quiz!</button>
         </div>
-        <script src="assets/javascript/script.js"></script>
-        <script src="assets/javascript/quizQ.js"></script>
-        <script src='assets/javascript/timer.js'></script>
+
+        <div id="boxTwo" class="quizBoxes">
+          <h3 id="title"></h3>
+          <button id="ansA" class="quizBtn"></button>
+          <button id="ansB" class="quizBtn"></button>
+          <button id="ansC" class="quizBtn"></button>
+          <button id="ansD" class="quizBtn"></button>
+          <p id="checkAns"></p>
+        </div>
+
+        <div id="boxThree" class="quizBoxes">
+          <h3>Times up! Sorry, you lose!</h3>
+          <a href="index.html" class="button px-2 py-1">Go Back</a>
+        </div>
+
+        <div id="boxFour" class="quizBoxes">
+          <h3 id="gameOver"></h3>
+          <h4 id="userScore"></h4>
+          <p>Enter your initials for the leaderboard:</p>
+          <form>
+            <input type="text" id="userName" />
+            <a href="leaderboard.html" id="submitScore" class="button px-2 py-1"
+              >Submit</a
+            >
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="assets/javascript/script.js"></script>
+    <script src="assets/javascript/quizQ.js"></script>
+    <script src="assets/javascript/timer.js"></script>
   </body>
 </html>
